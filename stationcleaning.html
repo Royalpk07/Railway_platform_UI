@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="Tracsis is a technology company that solves business critical resource, planning, asset and safety/risk management problems across the transportation sector utilising advanced data capture and analytics methodologies.">
+    <link rel="Stylesheet" href="../assets/css/font.min.css">
+    <link rel="Stylesheet" href="../assets/css/app.min.css">
+    <link rel="Stylesheet" href="../assets/css/custom.css">
+    <link rel="Stylesheet" href="../assets/css/common.css">
+    <link rel="Stylesheet" href="../assets/css/prism.css">
+    <link rel="Stylesheet" href="../assets/css/tooltip.min.css">
+    <link rel="Stylesheet" href="../assets/css/bmd-layout-drawer.min.css">
+    <link rel="Stylesheet" href="../assets/css/bootstrap-multiselect.css">
+    <link rel="Stylesheet" href="../assets/css/classic.min.css">
+    <link rel="Stylesheet" href="../assets/css/datatables.min.css">
+    <link rel="Stylesheet" href="../assets/css/dropdown.min.css">
+    <link rel="Stylesheet" href="../assets/css/multi-select.min.css">
+    <link rel="Stylesheet" href="../assets/css/table.min.css">
+    <style>
+        .btn.btn-primary {
+            background-color: #007bff;
+        }
+        
+        #h3 {
+            z-index: 2;
+        }
+    .left-addon input  { padding-left:  45px; }
+    .right-addon input { padding-right: 45px; }
+
+
+.fixed-icon{
+    float: right;    margin-right: 15px;
+   position: relative;
+z-index: 2;
+   margin-top: -41px;
+}
+    </style>
+</head>
+
+<body id="loginbody">
+    <header class="header">
+        <div class="menu-collapse navbar-collapse" id="leftmenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="btn btn-block text-black btn-link" href="index.html">Home Screen</a></li>
+                <!---<li class="nav-item"><a class="btn btn-block text-black btn-link" href="forgot-password.cfm">Forgotten Password</a></li>--->
+                <li class="nav-item">
+                    <a href="login.cfm" class="btn btn-primary btn-block">Outbox</a>
+                </li>
+                <li class="nav-item">
+                    <a href="##" id="appInformationModal" class="btn btn-primary btn-block">App Information</a>
+                </li>
+                <li class="nav-item">
+                    <a href="##" id="appInformationModal" class="btn btn-primary btn-block">Logout</a>
+                </li>
+            </ul>
+        </div>
+        <nav class="navbar navbar-default mb-0" role="navigation">
+            <div class="container">
+                <h3><b>STATION CLEANING</b></h3>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="leftmenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          </button>
+            </div>
+        </nav>
+    </header>
+    <main id="content">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col col-md-6 py-4">
+                    <div class="pb-4 text-center">
+
+                        <h6 class="text-lowercase" style="color:darkgrey;">It looks like you are at <b>Aberdour AUR</b> station. select continue to log Faults section.If you wish to log a faults section.If you wish to log a fault for a particular location,please selects the location,please select the
+                            loaction from the list or select "On Train" if you wish to log a fault for trains.</h6>
+                    </div>
+                    <div class="py-3" id="errMsg">
+                    </div>
+                    <form id="validate" action="#">
+                        <div class="form-group left-addon" id="form-group-username">
+                            <div class="fixed-left-icon">
+                                <i class="material-icons">my_location</i>
+                            </div>
+                            <input name="location" id="location" type="dropdown" value="" placeholder="Aberdour AUR">
+                             <div class="fixed-icon">
+                                <i class="material-icons">expand_more</i>
+                            </div>
+                        </div>
+                        
+
+                        <div class="row">
+                            <div class="col col-md-6">
+                                <button type="button" class="btn btn-light">BACK </button>
+                                <div class="fixed-left-icon">
+                                    <i class="material-icons">chevron_left</i>
+                                </div>
+                            </div>
+                            <div class="col col-md-6">
+                                <button type="button" class="btn btn-primary">CONTINUE</button>
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap-material-design.min.js"></script>
+    <script src="../assets/js/material-kit.min.js"></script>
+    <script src="../assets/js/jquery.validate.min.js"></script>
+    <script src="../assets/js/additional-methods.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {}
+    </script>
+</body>
+
+</html>

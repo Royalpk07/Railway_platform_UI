@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="Tracsis is a technology company that solves business critical resource, planning, asset and safety/risk management problems across the transportation sector utilising advanced data capture and analytics methodologies.">
+    <link rel="Stylesheet" href="../assets/css/font.min.css">
+    <link rel="Stylesheet" href="../assets/css/app.min.css">
+    <link rel="Stylesheet" href="../assets/css/custom.css">
+    <link rel="Stylesheet" href="../assets/css/common.css">
+    <link rel="Stylesheet" href="../assets/css/prism.css">
+    <link rel="Stylesheet" href="../assets/css/tooltip.min.css">
+    <link rel="Stylesheet" href="../assets/css/bmd-layout-drawer.min.css">
+    <link rel="Stylesheet" href="../assets/css/bootstrap-multiselect.css">
+    <link rel="Stylesheet" href="../assets/css/classic.min.css">
+    <link rel="Stylesheet" href="../assets/css/datatables.min.css">
+    <link rel="Stylesheet" href="../assets/css/dropdown.min.css">
+    <link rel="Stylesheet" href="../assets/css/multi-select.min.css">
+    <link rel="Stylesheet" href="../assets/css/table.min.css">
+    <style>
+        .btn.btn-primary {
+            background-color: #007bff;
+        }
+        
+        #h3 {
+            z-index: 2;
+        }
+        
+        .fixed-icon {
+            float: right;
+            margin-right: 15px;
+            position: relative;
+            z-index: 2;
+            margin-top: -41px;
+        }
+        
+        .left-addon select {
+            padding-left: 45px;
+        }
+        
+        .right-addon select {
+            padding-right: 45px;
+        }
+        
+        .left-addon input {
+            padding-left: 45px;
+        }
+        
+        .right-addon input {
+            padding-right: 45px;
+        }
+    </style>
+</head>
+
+<body id="loginbody">
+    <header class="header">
+        <div class="menu-collapse navbar-collapse" id="leftmenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <!---<li class="nav-item"><a class="btn btn-block text-black btn-link" href="forgot-password.cfm">Forgotten Password</a></li>--->
+                    <li class="nav-item">
+                        <a href="login.cfm" class="btn btn-primary btn-block">Outbox</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="##" id="appInformationModal" class="btn btn-primary btn-block">App Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="##" id="appInformationModal" class="btn btn-primary btn-block">Logout</a>
+                    </li>
+            </ul>
+        </div>
+        <nav class="navbar navbar-default mb-0" role="navigation">
+            <div class="container">
+                <h3><b>LOCATION</b></h3>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="leftmenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          </button>
+            </div>
+        </nav>
+    </header>
+    <main id="content">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col col-md-6 py-4">
+
+                    <div class="py-3" id="errMsg">
+                    </div>
+                    <form id="validate" action="#">
+                        <div class="form-group left-addon" id="form-group-username">
+                            <div class="fixed-left-icon">
+                                <i class="material-icons">my_location</i>
+
+
+
+
+
+                            </div>
+                            <div class="container mt-3">
+
+
+                                <select name="station" placeholder="Enter your Location">
+
+                                   
+                                  <option value="el" checked>Enter Your Location</option>  
+                                  <option value="ABD">Aberdeen ABD </option>
+                                  <option value="AUR">Aberdour AUR </option>
+                                  <option value="AVY">Aberdovey AVY</option>
+                                  <option value="ABH">Abererch ABH</option>
+                                  <option value="AVY">Aberdovey AVY</option>
+                                </select>
+                                <div class="fixed-icon">
+                                    <i class="material-icons">expand_more</i>
+                                </div>
+                                <br>
+                                <h6 class="text-center">OR</h6>
+                                <form>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <input type="checkbox">
+                                            </div>
+                                        </div>
+                                        <div class="col col-md-8">
+                                            <input type="text" class="form-control " placeholder="Please select if you are on the train">
+        
+                                        </div>
+                                    </div>
+                                </form>
+        
+                                <div class="row">
+                                    <div class="col col-md-6">
+                                        <button type="button" class="btn btn-light"> < BACK </button>
+                                    </div>
+                                    <div class="col col-md-6">
+                                        <button type="button" class="btn btn-primary"> CONTINUE </button>
+                                    </div>
+                                </div>
+                            </div>
+                    </form>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+        </form>
+        </div>
+        </div>
+        </div>
+    </main>
+    <script src=" ../assets/js/jquery.min.js "></script>
+    <script src="../assets/js/popper.min.js "></script>
+    <script src="../assets/js/bootstrap-material-design.min.js "></script>
+    <script src="../assets/js/material-kit.min.js "></script>
+    <script src="../assets/js/jquery.validate.min.js "></script>
+    <script src="../assets/js/additional-methods.min.js "></script>
+    <script type="text/javascript ">
+        window.onload = function() {}
+    </script>
+</body>
+
+</html>
